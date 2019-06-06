@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My site<!doctype html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Карусель</title>
+        </head>
+        <body><center><img src="стрелка%20влево.png" width="250" onclick="left()">
+    <img id="image" src="календарь1.png" width="400">
+    <img src="стрелка%20вправо.png" width="250" onclick="right()"><br/>
+<img src="круг.png" width="40" onclick="first()">
+    <img src="круг.png" width="40" onclick="second()">
+    <img src="круг.png" width="40" onclick="third()">
+</center>
+</body>
+<script>
+    q=1
+       function right(){
+              q=q+1
+              if(q>3){
+                  q=1
+              }
+          if(q==1){
+            document.getElementById('image').src='календарь1.png'
+          }
+          if(q==2){
+            document.getElementById('image').src='календарь2.png'
+          }
+          if (q==3) {
+              document.getElementById('image').src = 'календарь3.png'
+          }
+          }
+
+          function left() {
+        q=q-1
+        if(q<1){
+            q=3
+        }
+          if(q==1){
+            document.getElementById('image').src='календарь1.png'
+          }
+          if(q==2){
+            document.getElementById('image').src='календарь2.png'
+          }
+          if (q==3) {
+              document.getElementById('image').src = 'календарь3.png'
+          }
+
+
+    }
+    function first() {
+           i=1
+        document.getElementById('image').src='календарь1.png'
+    }
+    function second() {
+i=2
+document.getElementById('image').src='календарь2.png'
+    }
+function third() {
+    i=3
+    document.getElementById('image').src='календарь3.png'
+}
+
+
+
+</script>
+</html>
